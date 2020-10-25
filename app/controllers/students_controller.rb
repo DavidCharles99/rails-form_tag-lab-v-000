@@ -10,7 +10,6 @@ class StudentsController < ApplicationController
   def new
   end
   def create
-    binding.pry
   @student = Student.create(student: params[:first_name], student: params[:last_name])
 
       redirect_to student_path(@student)
